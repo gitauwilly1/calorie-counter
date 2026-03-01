@@ -47,3 +47,15 @@ calorieForm.addEventListener('submit', (e) => {
     calorieForm.reset();
     foodItemInput.focus();
 });
+
+window.removeEntry = (index) => {
+    calorieEntries.splice(index, 1);
+    updateInterface();
+};
+
+resetBtn.addEventListener('click', () => {
+    if (confirm('Are you sure you want to clear all records?')) {
+        calorieEntries = [];
+        updateInterface();
+    }
+});
