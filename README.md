@@ -4,7 +4,7 @@
 ---
 
 ## Contributors
- Gitau Willy
+ Gitau William
  ---
 
 
