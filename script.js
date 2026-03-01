@@ -31,3 +31,19 @@ function updateInterface() {
 
     totalCaloriesDisplay.textContent = total;
 }
+
+
+calorieForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const entry = {
+        name: foodItemInput.value,
+        calories: parseInt(calorieAmountInput.value)
+    };
+
+    calorieEntries.push(entry);
+    updateInterface();
+    
+    calorieForm.reset();
+    foodItemInput.focus();
+});
