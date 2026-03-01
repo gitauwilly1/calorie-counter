@@ -1,0 +1,7 @@
+#foodList li {
+    transition: all 0.2s ease;
+}
+
+#foodList li:hover {
+    background-color: #f9fafb;
+}
